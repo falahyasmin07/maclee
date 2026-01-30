@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeu : Devine le nombre</title>
+
+  <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    #jeu {
+      max-width: 500px;
+      margin: 80px auto;
+      padding: 30px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    #jeu input {
+      padding: 10px;
+      font-size: 16px;
+      width: 150px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    #jeu button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 10px;
+      margin-right: 5px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    #jeu button:hover {
+      background-color: #45a049;
+    }
+
+    #feedback {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    #attempts {
+      margin-top: 10px;
+      color: #555;
+    }
+
+    .btn-return {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333; 
+  color: white;
+  cursor: pointer;
+  text-decoration: none; 
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.btn-return:hover {
+  background-color: #555; 
+}
+  </style>
+</head>
+<body>
+
+  <div id="jeu">
+    <h1>Devine le nombre</h1>
+    <p>Je pense à un nombre entre <strong>1</strong> et <strong>100</strong>. Essaie de le deviner !</p>
+
+    <input type="number" id="guessInput" placeholder="Tape ton nombre">
+    <button id="guessBtn">Deviner</button>
+
+    <p id="feedback"></p>
+    <p id="attempts">Tentatives : 0</p>
+
+    <button id="restartBtn">Rejouer</button>
+  </div>
+
+ <footer style="text-align:center; margin-top:50px;">
+  <a href="presentation.html" class="btn-return">Retour au Portfolio</a>
+</footer>
+
+</body>
+</html>
